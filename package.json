@@ -1,0 +1,58 @@
+{
+  "name": "auto-comment-generator",
+  "displayName": "Auto Comment Generator",
+  "description": "Automatically generates meaningful comments for selected code",
+  "version": "0.1.0",
+  "publisher": "your-name",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Programming Languages"
+  ],
+  "keywords": [
+    "comments",
+    "documentation",
+    "javascript",
+    "python",
+    "productivity"
+  ],
+  "icon": "images/icon.png",
+  "activationEvents": [],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "auto-comment-generator.generateComment",
+        "title": "Generate Comment"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "auto-comment-generator.generateComment",
+        "key": "ctrl+alt+c",
+        "mac": "cmd+alt+c",
+        "when": "editorTextFocus"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "auto-comment-generator.generateComment",
+          "group": "1_modification",
+          "when": "editorHasSelection"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run lint",
+    "lint": "eslint src",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "eslint": "^8.56.0"
+  }
+}
