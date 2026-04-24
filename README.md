@@ -149,14 +149,7 @@ This project was built in 10 days as a learning exercise:
 |---|---|
 | Day 1 | Project setup, `yo code`, folder structure, first Git commit |
 | Day 2 | Hello World extension, `activate()`, debug with F5 |
-| Day 3 | Reading selected text with `editor.selection` |
-| Day 4 | Inserting text above selection with `editor.edit()` |
-| Day 5 | Command palette + keyboard shortcut in `package.json` |
-| Day 6 | Rule-based `generateSmartComment()` function |
-| Day 7 | Multi-language support + `formatComment()` |
-| Day 8 | Error handling, empty selection guard, undo support |
-| Day 9 | This README + documentation |
-| Day 10 | Final cleanup, `.vscodeignore`, ready to publish |
+
 
 ---
 
@@ -173,7 +166,8 @@ git checkout -b feature/my-improvement
 
 ## 📄 License
 
-[MIT](./LICENSE) © your-name
+[MIT](./LICENSE) © Navinya Ghanekar
+
 
 ---
 
