@@ -1,15 +1,10 @@
-const assert = require('assert');
+// ============================================================
+// AUTO COMMENT GENERATOR — Extension Tests
+// Placeholder: actual tests will be added on Day 8 (Error Handling)
+// ============================================================
 
-// You can import and use all API from the 'vscode' module
-// as well as import your extension to test it
-const vscode = require('vscode');
-// const myExtension = require('../extension');
+// TODO (Day 8+): Add tests for:
+//   - generateSmartComment() function
+//   - formatComment() function
+//   - Edge cases (empty selection, no editor, whitespace)
 
-suite('Extension Test Suite', () => {
-	vscode.window.showInformationMessage('Start all tests.');
-
-	test('Sample test', () => {
-		assert.strictEqual(-1, [1, 2, 3].indexOf(5));
-		assert.strictEqual(-1, [1, 2, 3].indexOf(0));
-	});
-});
