@@ -22,6 +22,9 @@ function activate(context) {
 function generateCommentCommand() {
   // DAY 3: Get a reference to the currently focused editor
   const editor = vscode.window.activeTextEditor;
+
+  // Guard: if no file is open, do nothing
+  if (!editor) return;
 }
 
 function deactivate() {}
