@@ -28,6 +28,9 @@ function generateCommentCommand() {
 
   // DAY 3: Get the user's current selection (start/end positions)
   const selection = editor.selection;
+
+  // DAY 3: Extract the actual string content from the selection range
+  const text = editor.document.getText(selection);
 }
 
 function deactivate() {}
