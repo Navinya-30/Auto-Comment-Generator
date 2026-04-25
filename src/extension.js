@@ -31,8 +31,14 @@ function generateCommentCommand() {
 
   // DAY 3: Extract the actual string content from the selection range
   const text = editor.document.getText(selection);
+
+  // DAY 3: Show a preview of the selected text (first 50 chars) in a popup
+  vscode.window.showInformationMessage(`You selected: ${text.substring(0, 50)}`);
 }
 
-function deactivate() {}
+// deactivate() is called when the extension is disabled
+function deactivate() {
+  console.log('Auto Comment Generator deactivated.');
+}
 
 module.exports = { activate, deactivate };
