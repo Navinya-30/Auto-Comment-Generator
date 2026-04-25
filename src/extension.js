@@ -18,7 +18,11 @@ function activate(context) {
   context.subscriptions.push(disposable);
 }
 
-function generateCommentCommand() {}
+// Command handler
+function generateCommentCommand() {
+  // DAY 3: Get a reference to the currently focused editor
+  const editor = vscode.window.activeTextEditor;
+}
 
 function deactivate() {}
 
