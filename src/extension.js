@@ -25,6 +25,9 @@ function generateCommentCommand() {
 
   // Guard: if no file is open, do nothing
   if (!editor) return;
+
+  // DAY 3: Get the user's current selection (start/end positions)
+  const selection = editor.selection;
 }
 
 function deactivate() {}
