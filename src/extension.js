@@ -5,7 +5,10 @@
 
 const vscode = require('vscode');
 
-function activate(context) {}
+// activate() is called when the extension is first used
+function activate(context) {
+  console.log('Auto Comment Generator is now active!');
+}
 
 function deactivate() {}
 
