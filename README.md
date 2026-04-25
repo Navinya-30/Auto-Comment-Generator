@@ -149,6 +149,7 @@ This project was built in 10 days as a learning exercise:
 |---|---|
 | Day 1 | Project setup, `yo code`, folder structure, first Git commit |
 | Day 2 | Hello World extension, `activate()`, debug with F5 |
+| Day 3 | Reading selected text with `editor.selection` |
 
 
 ---
